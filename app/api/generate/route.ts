@@ -16,7 +16,7 @@ ${toneDesc}
 Pastikan ayat tidak terlalu formal, bunyikan seperti ditulis oleh manusia.`;
 
   const completion = await openai.chat.completions.create({
-    model: 'gpt-3.5-turbo',
+    model: 'gpt-4o',
     messages: [{ role: 'user', content: prompt }],
     temperature: 0.8,
   });
